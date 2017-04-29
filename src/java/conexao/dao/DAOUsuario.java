@@ -38,7 +38,7 @@ public class DAOUsuario extends Conexao {
             conexao = abrirConexao();
             preparedStatement = conexao.prepareStatement(sql.toString());
             int i = 1;
-            preparedStatement.setString(i++, usuario.getEmail());
+            preparedStatement.setString(i++, usuario.getEmail().toUpperCase());
             preparedStatement.setString(i++, usuario.getSenha());
             
             resultSet = preparedStatement.executeQuery();

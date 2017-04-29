@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class Conexao {
 
     private final String DRIVER = "org.postgresql.Driver";
-    private final String URL = "jdbc:postgresql://localhost:5432/tcc";
+    private final String URL = "jdbc:postgresql://localhost:5432/aprendizagemvirtual";
     private final String USER = "postgres";
     private final String PASSWORD = "password";
     protected StringBuilder sql;

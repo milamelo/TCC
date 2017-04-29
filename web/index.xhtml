@@ -6,9 +6,20 @@
     <h:head>
         <title>Aprendizagem Virtual</title>
     </h:head>
-    <h:body>
-        Aprendizagem Virtual
-        
+    <h:body style="background-color: lightskyblue;">
+        <h:outputText value="Aprendizagem Virtual" style="font-size: x-large; color: white;" />
+        <h:form>
+            <p:panelGrid columns="2" style="border-collapse: collapse; border-style: none;">
+                <h:outputText value="E-mail:" />
+                <h:inputText value="#{loginMB.usuario.email}" required="true" requiredMessage="campo obrigatório" />
+
+                <h:outputText value="Senha:" />
+                <h:inputSecret value="#{loginMB.usuario.senha}" required="true" requiredMessage="campo obrigatório" />
+
+                <p:commandButton value="Entrar" action="#{loginMB.logar}" />
+            </p:panelGrid>
+        </h:form>
+
     </h:body>
 </html>
 
